@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "moja-global-381209",
+  "private_key_id": "392b12bc313aeae8d9bbe2ea9bcf537d16cd41f7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDU5OpbbBZCB9lg\n9aYQJ+HiMqsWIgSrZ1DkUjOjLa4iglfUeqIsLeEpCe5oYA184xB1AARLfBU8rr+u\nhlfdFOIpnf1MxOQu+N2mhFXSGeGrwheIlMfTJLzwYWDiV0WBmbc6GQrqj8CcBXuX\nacMGJ2ImGgs1GsXUohEfbRg3ExDe6Jr6H/z2yg3AXKNfRjqHys9BJlTI1qUSsRuW\nWpzaCJeHhmMVACyJJo76xKNrBLHv8zanXW2nxBB9ZM5S6w57yvncZItqp7j0RMb6\nmF2u158od+1nIZ6UAxmWaH/rn1Di5epjqPO/sa6AL6CuCijPFDGjudItxIjaypCy\n9wCDWLWNAgMBAAECggEAClHNVWCkJI++Vv+ZTNuuDJmhpuk/ujJAHs0oQR7n+7a/\nPKa0ITmZGjTnyEntpXHZPJ6jVqhdXCtpUbOj4yzNuLA2lMfPesJn9hggk9Za1MlL\n/DwgAolbmjhSKq6JyTozAj8wAwY0UyvF3aVMBYqXrJqjE/AoCkJP26rdW2ASd4eO\nwkDsmXzi0LSN+pVaV5mUsh7nxVrjDhzaFLUY8nrvN44WNS4g8lORybgUuDJdteWh\nka+byAoqGrLlLLNY850Qxepvnto/jtPlGT2CI8uG3wrcSefV57pVpbsJKbvOrKpB\nwlTWpUtmZPDrYzpR/unr2Jq9QInUyWgs3umGMEAVsQKBgQDzulfZKmkuNXe9Er+W\ntH7ZhmctR59UQ3RpD1tHebxaKxYTC8cJGW/eHljG+xeEjHIbTLEcqscuNqQkLbiS\n+FaieCHcq4zJ5df2Oqx/w6uetPDsQOSJatczaTSwaNFqiS5ket6LEUvT6/KfGh3V\n3mommKmXByE+wZY3fBTmgrrz8QKBgQDfnSAXMZ14H7Ssq07cUdJ5OpE6tBKtOJHh\ne9eSfndq6bNmJ8c9oVpe9oBVsi5WkRu7p0utRE9zyNZ5JD+gNAQTIyFrAuNgmF8A\nPnO+YqBfvPE1q2+5yrnhdQJrlVdi1k6/dd4somMO88mUy7ETXALEWPZqOxRnwT+b\nq5RZPWqHXQKBgQChbYen56Y4m+NN0LAi0jO+QX3vCKQn/HGK8Efl5GRzWFxLix5u\nEXH9rR3h1QbznM4q9LXOJfK80iYPbFT2yxMekvDipqEeTGSoyp3cFa6C9Jcp86Uq\nuyAEBieGvDYQGQIoPRVPCMqvd3SAGp0uPR0TqUOSK3/CgBfNchqpvmazEQKBgQCe\nT6FuikPPzbKeJFIajRsTlLFI/D/Uvx4YoxLFth9ZY8cM5dCbA2b1oFLPWOyRgP4/\nZnufWaNed6vP7CfXhbv0yIRaPJs5weZQR+atvSmJXjzvIEZjJPFgevSRshNB+DOc\nPRhkRTsYVOQ8IdFlwVh8Jfee0eDqa9han6jRXTfUSQKBgAvpcHRNIhVjzhuQM/IY\nIxje8lHUX+n507g4dO5Pm0LIDrVnw2PeZFaLnIklHZ1/cmgPlwzknmTYYOZwYa1C\ndxYBffmsyJlQQygnOh7BacA9eVMSL520CYQCUo7G8+zyiyU4+SNHi0WBz1fgN85Y\nbOgBqEhgV3rRqyPr6bupTY8S\n-----END PRIVATE KEY-----\n",
+  "client_email": "moja-global@moja-global-381209.iam.gserviceaccount.com",
+  "client_id": "101482418956115695644",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/moja-global%40moja-global-381209.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
