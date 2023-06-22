@@ -1,0 +1,5 @@
+outs:
+- md5: 2836d38f33008e39abf4675ceb912b3c
+  size: 25943640
+  hash: md5
+  path: IPCC_ClimateZoneMap.tif

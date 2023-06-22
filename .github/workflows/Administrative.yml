@@ -1,0 +1,53 @@
+name: Capture and Preprocess data
+on:
+  schedule:
+    - cron: '* */6 * * *'
+  workflow_dispatch:
+  
+  
+jobs:
+  update_data:
+    name: Update Data from source
+    runs-on: ubuntu-latest
+    steps:
+         - name: Checkout
+           uses: actions/checkout@v2
+         - name: Setup Python
+           uses: actions/setup-python@v2
+           with:
+             python-version: '3.12'
+             cache: 'pip'
+         - name: Install Dependencies
+           run: |
+            sudo add-apt-repository ppa:ubuntugis/ppa && sudo apt-get update
+            sudo apt-get install gdal-bin
+            sudo apt-get install libgdal-dev
+            export CPLUS_INCLUDE_PATH=/usr/include/gdal
+            export C_INCLUDE_PATH=/usr/include/gdal
+            pip install wheel
+            pip install numpy
+            sudo pip3 install GDAL==$(gdal-config --version | awk -F'[.]' '{print $1"."$2}') --global-option=build_ext --global-option="-I/usr/include/gdal"
+            pip install ipython
+            pip install dvc[gdrive]
+         - name: Run Script
+           run: |
+            cd Data/Administrative/
+            pip install --upgrade pip
+            pip install wget
+            python process.py
+         - name: Commit and Push Changes
+           env:
+            GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+           run: |
+            git config --local user.email "actions@github.com"
+            git config --local user.name "GitHub Actions"
+            dvc add Data/Administrative/
+            git add Data/Administrative/
+            git add Data/Administrative/process.py
+            git commit -m "Updated dataset on `date` with GitHub Actions"
+            git config --global pull.rebase true
+            git pull
+            git push origin master
+            dvc pull
+            dvc push
+            

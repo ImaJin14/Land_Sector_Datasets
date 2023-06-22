@@ -1,0 +1,5 @@
+outs:
+- md5: 00f2b284126821294357f969708c193b
+  size: 12008259
+  hash: md5
+  path: IPCC_ClimateZoneMap.geojson
