@@ -41,8 +41,22 @@ jobs:
            run: |
             git config --local user.email "actions@github.com"
             git config --local user.name "GitHub Actions"
-            dvc add Data/Soil/
-            git add Data/Soil/
+            dvc add Data/Soil/hwsd.tif
+            git add Data/Soil/hwsd.tif.dvc
+            dvc add Data/Soil/sq1.tif
+            git add Data/Soil/sq1.tif.dvc
+            dvc add Data/Soil/sq2.tif
+            git add Data/Soil/sq2.tif.dvc
+            dvc add Data/Soil/sq3.tif
+            git add Data/Soil/sq3.tif.dvc
+            dvc add Data/Soil/sq4.tif
+            git add Data/Soil/sq4.tif.dvc
+            dvc add Data/Soil/sq5.tif
+            git add Data/Soil/sq5.tif.dvc
+            dvc add Data/Soil/sq6.tif
+            git add Data/Soil/sq6.tif.dvc
+            dvc add Data/Soil/sq7.tif
+            git add Data/Soil/sq7.tif.dvc
             git add Data/Soil/process.py
             git commit -m "Updated dataset on `date` with GitHub Actions"
             git config --global pull.rebase true
