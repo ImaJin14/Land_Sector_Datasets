@@ -50,7 +50,6 @@ jobs:
             dvc add Data/LandCover/SEA_Strata.tif
             git add Data/LandCover/SEA_Strata.tif.dvc
             git add Data/LandCover/process.py
-            git add Data/LandCover/pro.py
             git commit -m "Updated dataset on `date` with GitHub Actions"
             git config --global pull.rebase true
             git pull
