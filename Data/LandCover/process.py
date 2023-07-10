@@ -45,15 +45,6 @@ with open(txt_file, 'r') as file:
     urls = [line.strip() for line in file]
 
 # Traverse the URLs and download the files
-#for url in urls:
-#    response = requests.get(url)
-    # Extract the filename from the URL
-#    filename = url.split('/')[-1]
-#    filepath = os.path.join(folder_name, filename)
-#    with open(filepath, 'wb') as file:
-#        file.write(response.content)
-#    print(f"Downloaded: {filename}")
-
 for url in urls:
     # Extract the filename from the URL
     filename = url.split('/')[-1]
@@ -109,7 +100,7 @@ a_file = open("process.py", "r")
 value = datetime.datetime.now()
 date_string = value.strftime('# %Y-%m-%d %H-%M-%S.%f')
 list_of_lines = a_file.readlines()
-list_of_lines[115] = date_string
+list_of_lines[106] = date_string
 a_file = open("process.py", "w")
 a_file.writelines(list_of_lines)
 a_file.close()
