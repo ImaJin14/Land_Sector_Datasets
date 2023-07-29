@@ -41,8 +41,20 @@ jobs:
            run: |
             git config --local user.email "actions@github.com"
             git config --local user.name "GitHub Actions"
-            dvc add Data/Administrative/
-            git add Data/Administrative/
+            dvc add Data/Administrative/groads-v1-global.json
+            git add Data/Administrative/groads-v1-global.json.dvc
+            dvc add Data/Administrative/gROADS-v1-africa.json
+            git add Data/Administrative/gROADS-v1-africa.json.dvc
+            dvc add Data/Administrative/groads-v1-asia.json
+            git add Data/Administrative/groads-v1-asia.json.dvc
+            dvc add Data/Administrative/groads-v1-europe.json
+            git add Data/Administrative/groads-v1-europe.json.dvc
+            dvc add Data/Administrative/groads-v1-americas.json
+            git add Data/Administrative/groads-v1-americas.json.dvc
+            dvc add Data/Administrative/groads-v1-oceania-east.json
+            git add Data/Administrative/groads-v1-oceania-east.json.dvc
+            dvc add Data/Administrative/groads-v1-oceania-west.json
+            git add Data/Administrative/groads-v1-oceania-west.json.dvc
             git add Data/Administrative/process.py
             git commit -m "Updated dataset on `date` with GitHub Actions"
             git config --global pull.rebase true
