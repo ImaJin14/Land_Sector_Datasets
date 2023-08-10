@@ -9,7 +9,7 @@ import os
 # Download the zip file
 # Define the wget commands
 wget_cmds = [
-    'wget --auth-no-challenge --user=Simpleshell --password=9KvEve-X_F.jmxV https://sedac.ciesin.columbia.edu/downloads/data/groads/groads-global-roads-open-access-v1/groads-v1-global-gdb.zip',
+    #'wget --auth-no-challenge --user=Simpleshell --password=9KvEve-X_F.jmxV https://sedac.ciesin.columbia.edu/downloads/data/groads/groads-global-roads-open-access-v1/groads-v1-global-gdb.zip',
     'wget --auth-no-challenge --user=Simpleshell --password=9KvEve-X_F.jmxV https://sedac.ciesin.columbia.edu/downloads/data/groads/groads-global-roads-open-access-v1/groads-v1-africa-shp.zip',
     'wget --auth-no-challenge --user=Simpleshell --password=9KvEve-X_F.jmxV https://sedac.ciesin.columbia.edu/downloads/data/groads/groads-global-roads-open-access-v1/groads-v1-asia-shp.zip',
     'wget --auth-no-challenge --user=Simpleshell --password=9KvEve-X_F.jmxV https://sedac.ciesin.columbia.edu/downloads/data/groads/groads-global-roads-open-access-v1/groads-v1-europe-shp.zip',
@@ -42,8 +42,8 @@ directory_to_traverse = "."
 unzip_files(directory_to_traverse)
 
 # Processing shapefiles to json 
-gdalwarp0_cmd = 'ogr2ogr -f GeoJSON -t_srs EPSG:4326 "groads-v1-global.json" "groads-v1-global-gdb/groads-v1-global.gdb"'
-os.system(gdalwarp0_cmd)
+#gdalwarp0_cmd = 'ogr2ogr -f GeoJSON -t_srs EPSG:4326 "groads-v1-global.json" "groads-v1-global-gdb/groads-v1-global.gdb"'
+#os.system(gdalwarp0_cmd)
 
 gdalwarp1_cmd = 'ogr2ogr -f GeoJSON -t_srs EPSG:4326 "gROADS-v1-africa.json" "groads-v1-africa-shp/gROADS-v1-africa.shp"'
 os.system(gdalwarp1_cmd)

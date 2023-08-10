@@ -41,8 +41,6 @@ jobs:
            run: |
             git config --local user.email "actions@github.com"
             git config --local user.name "GitHub Actions"
-            dvc add Data/Administrative/groads-v1-global.json
-            git add Data/Administrative/groads-v1-global.json.dvc
             dvc add Data/Administrative/gROADS-v1-africa.json
             git add Data/Administrative/gROADS-v1-africa.json.dvc
             dvc add Data/Administrative/groads-v1-asia.json
